@@ -1,5 +1,7 @@
 package com.arikolabs.validator;
 
+import com.fasterxml.jackson.databind.util.JSONPObject;
+import net.minidev.json.JSONObject;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
@@ -8,7 +10,7 @@ public class Validator {
 
     @CrossOrigin("http://localhost:3000/")
     @GetMapping("/validate/{token}")
-        public boolean isValid(@PathVariable String token) {
+        public JSONObject isValid(@PathVariable String token) {
         token = token.replaceAll("-", "")   ;
         Long tokenNumber = Long.parseLong(token);
         int lastDigit = (int)(tokenNumber % 10);
@@ -32,10 +34,13 @@ public class Validator {
         }
         System.out.println("Sum is"+sum);
         System.out.println("last digit is"+lastDigit);
+         JSONObject object= new JSONObject();
         if( (lastDigit==0 && sum%10==0) || (10-sum%10)==lastDigit){
-        return true;
+            object.put("validToken",true);
+            return object;
         } else{
-          return  false;
+            object.put("validToken",false);
+            return object;
         }
 
     }
