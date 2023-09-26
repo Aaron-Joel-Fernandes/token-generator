@@ -1,9 +1,8 @@
-package com.arikolabs.generator;
+package com.akirolabs.generator;
 
 import net.minidev.json.JSONObject;
 import org.springframework.web.bind.annotation.*;
 
-import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Random;

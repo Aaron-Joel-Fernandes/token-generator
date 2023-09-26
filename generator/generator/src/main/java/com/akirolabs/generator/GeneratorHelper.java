@@ -1,4 +1,4 @@
-package com.arikolabs.generator;
+package com.akirolabs.generator;
 
 public class GeneratorHelper {
 

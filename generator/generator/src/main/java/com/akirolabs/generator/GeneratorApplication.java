@@ -1,13 +1,13 @@
-package com.arikolabs.validator;
+package com.akirolabs.generator;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class ValidatorApplication {
+public class GeneratorApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(ValidatorApplication.class, args);
+		SpringApplication.run(GeneratorApplication.class, args);
 	}
 
 }
