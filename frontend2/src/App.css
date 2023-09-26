@@ -1,0 +1,199 @@
+body {
+  background: #FFFFFF;
+  font-family: -apple-system, system-ui, BlinkMacSystemFont, Roboto, Arial, sansserif, monospace;
+  margin: 0px;
+}
+
+.App-header {
+  height: 70px;
+  width: 100%;
+  box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+  transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+}
+
+.App-header div {
+  color: #0699C9;
+  padding-top: 15px;
+  font-size: 24px;
+  text-align: center;
+  font-weight: 600;
+}
+
+.Container {
+  display: flex;
+  margin-top: 50px;
+  justify-content: center;
+}
+
+.Container > div {
+  box-shadow: 2px 3px 10px 0px rgba(8.000000000000044, 8.000000000000044, 8.000000000000044, 0.18);
+  margin: 0px 0px 0px 35px;
+  --e-column-margin-right: 20px;
+  --e-column-margin-left: 35px;
+  padding: 50px 50px 50px 50px;
+}
+
+.tg-container {
+  width: 300px;
+  height: 200px;
+}
+
+.tv-container {
+  width: 800px;
+  height: 500px;
+}
+
+.tokens-table {
+  width: calc(50% - 10px);
+  max-height: 400px;
+  overflow:auto;
+  margin-left: 10px;
+  float: left;
+}
+
+/* Style for the table */
+.tokens-table table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+/* Style for table header */
+.tokens-table th {
+  background-color: #f2f2f2;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+/* Style for table body */
+.tokens-table tbody {
+  display: block;
+  overflow: auto;
+  max-height: 340px; /* Adjust this value as needed */
+}
+
+/* Style for table rows and cells */
+.tokens-table tr {
+  display: table;
+  width: 100%;
+  table-layout: fixed;
+  box-sizing: border-box;
+}
+
+.tokens-table td, .tokens-table th {
+  padding: 8px;
+  text-align: center;
+  border: 1px solid #ccc;
+}
+
+/* Add some sample data */
+.tokens-table td {
+  width: 25%;
+}
+
+.tg-container .title, .tv-container .title {
+  font-size: 18px;
+  font-weight: 500;
+  text-decoration: underline;
+  /* color: #50D9FF; */
+}
+
+.tg-form, .tokens {
+  margin: 25px auto;
+}
+
+.tg-name-input {
+  margin: 15px auto;
+}
+
+.tg-name-input input {
+  border: 1px solid #69727d;
+  vertical-align: middle;
+
+  border-radius: 3px;
+  padding: 0.5rem 1rem;
+  transition: all .3s;
+
+  line-height: 1.4;
+  font-size: 15px;
+  min-height: 20px;
+
+  width: 190px;
+  margin-left: 10px;
+}
+
+.tg-form button, .tokens button {
+  background-color: #0D1557;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+
+  display: block;
+  text-align: center;
+  white-space: nowrap;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  padding: 0.5rem 1rem;
+  border-radius: 3px;
+  transition: all .3s;
+  border: 0px;
+  float: right;
+}
+
+.font-weight-600 {
+  font-weight: 600;
+}
+
+.tokens button {
+  float: left;
+  margin-right: 10px;
+}
+
+.tg-form button:hover, .tokens button:hover {
+  background-color: #50D9FF;
+  color: #ffffff;
+}
+
+.tg-form button:not(:disabled), .tokens button:not(:disabled) {
+  cursor: pointer;
+}
+
+table, td, th {
+  border: 1px solid;
+  text-align: center;
+}
+
+table {
+  margin-top: 10px;
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.tokenValidate {
+  clear: both;
+  /* margin-top: 100px; */
+  font-size: 18px;
+}
+
+.valid {
+  color: #00d084;
+  letter-spacing: 1px;
+}
+
+.invalid {
+  color: #cf2e2e;
+  letter-spacing: 1px;
+}
+
+.errorMsg {
+  color: #cf2e2e;
+  margin-bottom: 30px;
+  height: 25px;
+}
+
+.token-count div {
+  float: right;
+  clear: both;
+}
