@@ -9,6 +9,7 @@ mvn spring-boot:run &
 
 # Build and run the React application
 cd ../../frontend
+npm install
 npm start
 
 
