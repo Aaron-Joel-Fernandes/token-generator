@@ -52,7 +52,7 @@ public class Validator {
     @GetMapping("/validate")
     public JSONObject isValid(@RequestBody Map<Integer,String> tokens) {
         JSONObject object = new JSONObject();
-        for(Integer j=1;j<tokens.size();j++) {
+        for(Integer j=0;j<tokens.size();j++) {
             String cardNumber= tokens.get(j);
             String token= tokens.get(j);
             token = token.replaceAll("-", "");
